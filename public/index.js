@@ -8,7 +8,6 @@ let todayDate;
 let interval;
 let distanceTime;
 
-
 function setTime() {
 	countDownDate = new Date("Mar 25, 2023, 12:47:22").getTime();
 	todayDate = new Date().getTime();
@@ -17,8 +16,6 @@ function setTime() {
 	hoursEl.innerHTML = Math.floor(distanceTime % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
 	minutesEl.innerHTML = Math.floor(distanceTime % (1000 * 60 * 60) / (1000 * 60));
 	secondsEl.innerHTML = Math.floor(distanceTime % (1000 * 60) / 1000);
-
-
 }
 
 function startTimer() {
@@ -27,7 +24,7 @@ function startTimer() {
 		// if (distanceTime === 0) {
 		// 	stopTimer()
 		// }
-	}, 1000);
+	}, 100);
 }
 
 
